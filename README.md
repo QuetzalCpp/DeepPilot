@@ -18,6 +18,15 @@ Our proposed DeepPilot runs 3 specialized models in parallel. The first one pred
 
 ![alt text](https://github.com/QuetzalCpp/DeepPilot/blob/master/images/DeepPilot_architecture.jpg)
 
+## Recommended system
+- Ubuntu 16.04
+- ROS kinetic Kame
+- Python 2.7.15
+- Cuda 
+- Cudnn
+- Tensorflow 
+- Keras
+- um_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
