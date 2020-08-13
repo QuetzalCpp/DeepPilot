@@ -6,7 +6,9 @@ Autonomous Drone Racing (ADR) was first proposed in IROS 2016. It called for the
 
 ![alt text](https://github.com/QuetzalCpp/DeepPilot/blob/master/Block_Diagram.jpg)
 
-It consists of 4 steps: (1) Data acquisition using the drone’s onboard camera; (2) Real-time mosaic generation, consisting of 6 frames; (3) Flight commands prediction using our proposed CNN named DeepPilot, these commands are represented by the tuple (ϕ,θ,ψ,h); (4) Implementation of a filter to smooth the signal. A video illustrating the performance of our proposed DeepPilot can be found at https://youtu.be/Qo48pRCxM40.
+It consists of 4 steps: (1) Data acquisition using the drone’s onboard camera; (2) Real-time mosaic generation, consisting of 6 frames; (3) Flight commands prediction using our proposed CNN named DeepPilot, these commands are represented by the tuple (ϕ,θ,ψ,h); (4) Implementation of a filter to smooth the signal.
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
 
 
