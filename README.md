@@ -35,6 +35,8 @@ To be announced soon
 If you use any of data, model or code, please cite the following reference:
 
 Rojas-Perez, L.O., & Martinez-Carranza, J. (2019). DeepPilot: A CNN for Autonomous Drone Racing. Sensors, 20(16), 4524.
+https://doi.org/10.3390/s20164524
+
 ```
 @article{oyuki2020deeppilot,
   title={DeepPilot: A CNN for Autonomous Drone Racing.},
