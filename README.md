@@ -43,8 +43,7 @@ Rojas-Perez, L.O., & Martinez-Carranza, J. (2019). DeepPilot: A CNN for Autonomo
   volume={20},
   number={16},
   pages={4524},
-  year={2020},
-  
+  year={2020}
 }
 ```
  ## Acknowledgements
