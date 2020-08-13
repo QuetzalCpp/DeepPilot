@@ -22,8 +22,8 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 
 [![Watch the video](images/gate5.gif)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
-[![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq2.jpg?sqp=COCt0_kF&rs=AOn4CLC7MXWHPWOAqlvyi7S3XoJCjyNkCw)](https://www.youtube.com/watch?v=YD5oqe8DelE)
-[![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq3.jpg?sqp=COCt0_kF&rs=AOn4CLALymXsHMEkw7ccui0UE9yMRHh7ag)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+[![Watch the video](images/mq2.jpg)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+[![Watch the video](images/mq3.jpg)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
 ## Recommended system
 - Ubuntu 16.04
