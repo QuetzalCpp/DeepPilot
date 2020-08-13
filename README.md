@@ -22,10 +22,10 @@ Our proposed DeepPilot runs 3 specialized models in parallel. The first one pred
 - Ubuntu 16.04
 - ROS kinetic Kame
 - Python 2.7.15
-- Cuda 
-- Cudnn
-- Tensorflow 
-- Keras
+- Cuda 9.0
+- Cudnn 7.3.0
+- Tensorflow 1.12.0
+- Keras 2.2.4
 - Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
 ## Reference
