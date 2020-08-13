@@ -28,6 +28,9 @@ Our proposed DeepPilot runs 3 specialized models in parallel. The first one pred
 - Keras 2.2.4
 - Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
+## Datasets to train DeepPilot
+To be announced soon
+
 ## Reference
 If you use any of data, model or code, please cite the following reference:
 
