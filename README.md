@@ -21,7 +21,10 @@ Our proposed DeepPilot runs 3 specialized models in parallel. The first one pred
 A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 
 
-[![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq1.jpg?sqp=COCt0_kF&rs=AOn4CLDaF68MYig0YzuYo4j69i4LAhMH_w)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+<p align="center">
+  [![Watch the video](images/gate5.gif)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+</p>
+
 [![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq2.jpg?sqp=COCt0_kF&rs=AOn4CLC7MXWHPWOAqlvyi7S3XoJCjyNkCw)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 [![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq3.jpg?sqp=COCt0_kF&rs=AOn4CLALymXsHMEkw7ccui0UE9yMRHh7ag)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
