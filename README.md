@@ -26,7 +26,7 @@ Our proposed DeepPilot runs 3 specialized models in parallel. The first one pred
 - Cudnn
 - Tensorflow 
 - Keras
-- um_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
+- Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
