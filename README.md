@@ -9,6 +9,8 @@ Autonomous Drone Racing (ADR) was first proposed in IROS 2016. It called for the
 It consists of 4 steps: (1) Data acquisition using the drone’s onboard camera; (2) Real-time mosaic generation, consisting of 6 frames; (3) Flight commands prediction using our proposed CNN named DeepPilot, these commands are represented by the tuple (ϕ,θ,ψ,h); (4) Implementation of a filter to smooth the signal.
 
 [![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq1.jpg?sqp=COCt0_kF&rs=AOn4CLDaF68MYig0YzuYo4j69i4LAhMH_w)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+[![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq2.jpg?sqp=COCt0_kF&rs=AOn4CLC7MXWHPWOAqlvyi7S3XoJCjyNkCw)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+[![Watch the video](https://i9.ytimg.com/vi/YD5oqe8DelE/mq3.jpg?sqp=COCt0_kF&rs=AOn4CLALymXsHMEkw7ccui0UE9yMRHh7ag)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
 
 
