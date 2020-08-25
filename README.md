@@ -45,16 +45,68 @@ Rojas-Perez, L.O., & Martinez-Carranza, J. (2020). DeepPilot: A CNN for Autonomo
 https://doi.org/10.3390/s20164524
 
 ```
-@article{oyuki2020deeppilot,
-  title={DeepPilot: A CNN for Autonomous Drone Racing.},
-  author={Rojas-Perez, L.Oyuki and Martinez-Carranza, Jose},
+@article{rojas2020deeppilot,
+  title={DeepPilot: A CNN for Autonomous Drone Racing},
+  author={Rojas-Perez, Leticia Oyuki and Martinez-Carranza, Jose},
   journal={Sensors},
   volume={20},
   number={16},
   pages={4524},
+  year={2020},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
+## Related References
+
+```
+@article{rojas2020ADRwithop,
+  title={Autonomous Drone Racing with an Opponent:  A First Approach},
+  author={Rojas-Perez, Leticia Oyuki and Martinez-Carranza, Jose},
+  journal={Computaci{\'o}n y Sistemas},
+  volume={},
+  number={},
   year={2020}
 }
 ```
+
+A. A. Cabrera-Ponce, L. O. Rojas-Perez, J. A. Carrasco-Ochoa, J. F. Martinez-Trinidad and J. Martinez-Carranza, "Gate Detection for Micro Aerial Vehicles using a Single Shot Detector," in IEEE Latin America Transactions, vol. 17, no. 12, pp. 2045-2052, December 2019, doi: 10.1109/TLA.2019.9011550.
+
+```
+@ARTICLE{9011550,
+  author={A. A. {Cabrera-Ponce} and L. O. {Rojas-Perez} and J. A. {Carrasco-Ochoa} and J. F. {Martinez-Trinidad} and J. {Martinez-Carranza}},
+  journal={IEEE Latin America Transactions}, 
+  title={Gate Detection for Micro Aerial Vehicles using a Single Shot Detector}, 
+  year={2019},
+  volume={17},
+  number={12},
+  pages={2045-2052},}
+```
+
+L. O. Rojas-Perez and J. Martinez-Carranza, "A Temporal CNN-based Approach for Autonomous Drone Racing," 2019 Workshop on Research, Education and Development of Unmanned Aerial Systems (RED UAS), Cranfield, United Kingdom, 2019, pp. 70-77, doi: 10.1109/REDUAS47371.2019.8999703.
+```
+@INPROCEEDINGS{8999703,
+  author={L. O. {Rojas-Perez} and J. {Martinez-Carranza}},
+  booktitle={2019 Workshop on Research, Education and Development of Unmanned Aerial Systems (RED UAS)}, 
+  title={A Temporal CNN-based Approach for Autonomous Drone Racing}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={70-77},}
+```
+
+J. A. Cocoma-Ortega, L. O. Rojas-Perez, A. A. Cabrera-Ponce and J. Martinez-Carranza, "Overcoming the Blind Spot in CNN-based Gate Detection for Autonomous Drone Racing," 2019 Workshop on Research, Education and Development of Unmanned Aerial Systems (RED UAS), Cranfield, United Kingdom, 2019, pp. 253-259, doi: 10.1109/REDUAS47371.2019.8999722.
+
+```
+@INPROCEEDINGS{8999722,
+  author={J. A. {Cocoma-Ortega} and L. O. {Rojas-Perez} and A. A. {Cabrera-Ponce} and J. {Martinez-Carranza}},
+  booktitle={2019 Workshop on Research, Education and Development of Unmanned Aerial Systems (RED UAS)}, 
+  title={Overcoming the Blind Spot in CNN-based Gate Detection for Autonomous Drone Racing}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={253-259},}
+```
+
  ## Acknowledgements
 We are thankful for the processing time granted by the National Laboratory of Supercomputing (LNS) under the project 201902063C. The first author is thankful to Consejo Nacional de Ciencia y Tecnología (CONACYT) for the scholarship No. 924254. We are also thankful for the partial financial support granted via the FORDECYT project no. 296737 “Consorcio en Inteligencia Artificial” for the development of this work.
 
