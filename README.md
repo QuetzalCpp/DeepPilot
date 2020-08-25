@@ -58,6 +58,7 @@ https://doi.org/10.3390/s20164524
 ```
 ## Related References
 
+L. O. Rojas-Perez and J. Martinez-Carranza, "Autonomous Drone Racing with an Opponent:  A First Approach",Computación y Sistemas (2020).
 ```
 @article{rojas2020ADRwithop,
   title={Autonomous Drone Racing with an Opponent:  A First Approach},
