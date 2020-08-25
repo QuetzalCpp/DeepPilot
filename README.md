@@ -36,7 +36,7 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 - Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
 ## Datasets to train DeepPilot
-To be announced soon
+https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EnPO2MuLk6NMovqWYrH9IbYBRWzcqOuo71XZiL3PCBtNSw?e=TdY0wD
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
