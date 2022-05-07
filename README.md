@@ -70,12 +70,14 @@ roslaunch rotors_gazebo bebop_racetrack2.launch
 <p align="center">
   <img src="images/racetrack2.jpg">
 </p>
+
 ```bash
 roslaunch rotors_gazebo bebop_racetrack3.launch
 ```
-<p align="center">
+<br align="center">
   <img src="images/racetrack3.jpg">
-</p>
+<br>
+
 ## DeepPilot
 
 ```bash
