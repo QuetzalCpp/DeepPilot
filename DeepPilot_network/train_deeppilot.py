@@ -1,7 +1,7 @@
 import network_libs.helper_net as helper_net
 import network_libs.net as net
 import numpy as np
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam 
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 import matplotlib.pyplot as plt
 from keras import backend as K 
@@ -18,7 +18,7 @@ if __name__ == "__main__":
    
     
 
-    adam = Adam(lr=0.001, clipvalue=1.5)
+    adam = Adam(learning_rate=0.001, clipvalue=1.5)
    
     #Same compilation for both nets, dense layers have sema name.
     model.compile(optimizer=adam, loss={'roll': net.euc_lossRoll,

@@ -1,18 +1,14 @@
-from scipy.misc import imread, imresize
 from keras.layers import Input, Dense, Convolution2D, Conv2D
 from keras.layers import MaxPooling2D, AveragePooling2D
 from keras.layers import ZeroPadding2D, Dropout, Flatten
 from keras.layers import merge, Reshape, Activation, BatchNormalization
 from keras.layers import concatenate
-from keras.utils.conv_utils import convert_kernel
 from keras import backend as K
 from keras.models import Model
 import tensorflow as tf
 import numpy as np
 import h5py
 import math
-
-from keras.utils.vis_utils import plot_model
 
 def euc_lossRoll(y_true, y_pred):
     lx = K.sqrt(K.sum(K.square(y_true[:,:] - y_pred[:,:]), axis=1, keepdims=True))
@@ -89,7 +85,7 @@ def create_posenet_3_separated_outs(weights_path=None, tune=False):
 
     if tune:
         if weights_path:
-            weights_data = np.load(weights_path, allow_pickle = True).item()
+            weights_data = np.load(weights_path, encoding = 'latin1', allow_pickle = True).item()
             for layer in posenet.layers:
                 if layer.name in weights_data.keys():
                     layer_weights = weights_data[layer.name]

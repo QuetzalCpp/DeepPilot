@@ -9,8 +9,6 @@ import rospy
 import cv2
 #import video
 import sys
-#import math
-graph_def = tf.GraphDef()
 from sensor_msgs.msg import Image, Imu
 from cv_bridge import CvBridge, CvBridgeError
 #=== TWIST ====
@@ -29,10 +27,9 @@ import math
 import network_libs.helper_net as helper_net
 import network_libs.net as net
 import numpy as np
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam 
 from keras import backend as K
 
-#~ from    gazebo_msgs.srv    import GetModelState
 from    gazebo_msgs.srv    import *
 import  rospy
 
@@ -42,10 +39,10 @@ class DeepPilot:
 	def __init__(self):
 		#====== ROS
 		self.bridge = CvBridge()
-		self.imag1 = rospy.Subscriber('/ardrone/front/image_raw', Image, self.callback, queue_size=1, buff_size=2**24)
+		self.imag1 = rospy.Subscriber('/bebop2/camera_base/image_raw', Image, self.callback, queue_size=1, buff_size=2**24)
 		self.Ovr = rospy.Subscriber('/keyboard/override', Int8, self.flag)
 		self.override = 0
-		self.pub_cmd_vel_Estimation = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+		self.pub_cmd_vel_Estimation = rospy.Publisher('/bebop/cmd_vel', Twist, queue_size=10)
 		self.vel_msg = Twist()
 		
 		#======= DeepPilot
@@ -102,10 +99,6 @@ class DeepPilot:
 		
 		self.alpha = 0.1
 		
-		#-----------------------------------------------------------------------------------------------------------
-		self.graph 				= tf.Graph()
-		self.graph 				= tf.get_default_graph()
-		#---------------------
 		print("Loaded model from disk")
 		
 		self.get_state_service = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
@@ -114,14 +107,13 @@ class DeepPilot:
 		self.model_state = GetModelStateRequest()
 		self.model_state.model_name = 'quadrotor'
 		
-		if not os.path.exists(newdata): os.makedirs(newdata)
-		
 		print('===============  READY ================================')
 		print('===============  READY ================================')
 
 	def callback(self,data):
 		
 		frame = self.bridge.imgmsg_to_cv2(data, "bgr8")
+		frame = cv2.resize(frame, (640, 360))
 		self.flag = 0
 		
 		self.frame_cont = self.frame_cont + 1
@@ -155,16 +147,14 @@ class DeepPilot:
 				im_to_pred = helper_net.preprocess_2(self.outputImage)
 				im_to_pred = np.squeeze(np.array(im_to_pred))
 				im_to_pred = np.expand_dims(im_to_pred, axis=0)
-				
-			with self.graph.as_default():
-				tf.import_graph_def(graph_def)
-				start = time()
-				
-				speedpred = model1.predict(im_to_pred)
-				speedpred_altitude = model2.predict(im_to_pred)
-				speedpred_yaw = model3.predict(im_to_pred)
-				
-				self.elapse = time() - start
+			
+			start = time()
+			
+			speedpred = model1.predict(im_to_pred)
+			speedpred_altitude = model2.predict(im_to_pred)
+			speedpred_yaw = model3.predict(im_to_pred)
+			
+			self.elapse = time() - start
 				
 
 			self.pred_roll = round(speedpred[0][0][0],2)
@@ -201,18 +191,18 @@ class DeepPilot:
 				self.altitude = 0.0
 				self.yaw = 0.0
 			
-			print "Speed predicted		|	Smoothed speed"
-			print ""
-			print "Roll: ",  self.pred_roll, "		|	Roll: ",  self.roll 
-			print "Pitch: ",  self.pred_pitch, "		|	Pitch: ",  self.pitch
-			print "Yaw: ",  self.pred_yaw, "		|	Yaw: ",  self.yaw 
-			print "Altitude: ",  self.pred_altitude, "	|	Altitude: ",  self.altitude 
-			print "Drone Pose: ", round(self.objstate.pose.position.x,2), ', ' , round(self.objstate.pose.position.y,2), ', ', round(self.objstate.pose.position.z,2)
-			print ""
-			print "Time of speed prediction: ", self.elapse , ' Seconds'
-			print ""
-			print "Time of lap: ", self.lap_time , ' Seconds'
-			print ""
+			print ('Flight Command predicted		|	Smoothed Flight Command')
+			print ('')
+			print ('Roll: ',  self.pred_roll, '		|	Roll: ',  self.roll )
+			print ('Pitch: ',  self.pred_pitch, '		|	Pitch: ',  self.pitch)
+			print ('Yaw: ',  self.pred_yaw, '		|	Yaw: ',  self.yaw )
+			print ('Altitude: ',  self.pred_altitude, '	|	Altitude: ',  self.altitude )
+			print ('Drone Pose: ', round(self.objstate.pose.position.x,2), ', ' , round(self.objstate.pose.position.y,2), ', ', round(self.objstate.pose.position.z,2))
+			print ('')
+			print ('Time of speed prediction: ', self.elapse , ' Seconds')
+			print ('')
+			print ('Time of lap: ', self.lap_time , ' Seconds')
+			print ('')
 
 
 	def flag(self,msg):
@@ -220,7 +210,6 @@ class DeepPilot:
 			self.override = 1
 		else:
 			self.override = 0
-		#~ print ("Override: ", msg.data)
 		
 
 				
