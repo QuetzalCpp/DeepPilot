@@ -63,15 +63,54 @@ catkin_make
 git clone -b Noetic https://github.com/QuetzalCpp/DeepPilot.git
 cd DeepPilot
 bash setup.sh 
+cd ..
+catkin_make
 ```
 
 ### Additional Resources
 - [DeepPilot Models pretrained](https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT)
 - [Datasets to train DeepPilot](https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT)
 
+### Train DeepPilot
+
+```bash
+cd /bebop_ws/src/DeepPilot/DeepPilot_network
+python train_deeppilot.py
+```
+
+### Start DeepPilot
+
+```bash
+cd /bebop_ws/src/DeepPilot/DeepPilot_network
+python evaluation_mosaic-6img.py
+```
+
+### Start keyboard
+
+```bash
+cd /bebop_ws/
+source devel/setup.bash 
+rosrun keyboard keyboard
+```
+| Key | Description | --- | Key | Description |
+| --- | --- | --- | --- | --- | 
+| T | Takeoff | --- | Space Bar | Land |
+| A | Roll (+) | --- | D | Roll (-) |
+| W | Pitch (+) | --- | S | Pitch (-) |
+| Q | Yaw (+) | --- | E | Yaw (-) |
+| Up (arrow key)| Altitude (+) | --- | Down (arrow key)| Altitude (-) |
+| Left (arrow key)|  Speed (-) | --- | Right (arrow key)|  Speed (+) |
+| X | Autonomous MODE | --- | C | Manual MODE |
+
+DeepPilot control is activated by pressing the X key.
+
+The DeepPilot control can be cancelled at any time by pressing the C key.
+
 ### Start the simulator mode
 
 ```bash
+cd /bebop_ws/
+source devel/setup.bash 
 roslaunch rotors_gazebo bebop_racetrack1.launch
 ```
 <p align="center">
