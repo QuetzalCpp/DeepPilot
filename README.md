@@ -75,7 +75,7 @@ roslaunch rotors_gazebo bebop_racetrack2.launch
 roslaunch rotors_gazebo bebop_racetrack3.launch
 ```
 <br align="center">
-  <img src="images/racetrack3.jpg">
+  <img height= "400" src="images/racetrack3.jpg">
 <br>
 
 ## DeepPilot
