@@ -7,15 +7,18 @@ Autonomous Drone Racing (ADR) was first proposed in IROS 2016. It called for the
 </p>
 
 ## Overview of our approach
-
-![alt text](images/overview_approach.jpg)
+<p align="center">
+  <img height= "350" src="images/overview_approach.jpg">
+</p>
 
 It consists of 4 steps: (1) Data acquisition using the drone’s onboard camera; (2) Real-time mosaic generation, consisting of 6 frames; (3) Flight commands prediction using our proposed CNN named DeepPilot, these commands are represented by the tuple (ϕ,θ,ψ,h); (4) Implementation of a filter to smooth the signal.
 
 ## DeepPilot Architecture
 Our proposed DeepPilot runs 3 specialized models in parallel. The first one predicts ϕ and θ angular positions of the body frame; the second one predicts ψ, the rotational speed over the Z-axis; and the third one predicts h, the vertical speed. The size of the kernels is indicated in the colored boxes at the bottom-left.
 
-![alt text](images/DeepPilot_architecture.jpg)
+<p align="center">
+  <img height= "350" src="images/DeepPilot_architecture.jpg">
+</p>
 
 ## Video
 A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
@@ -61,22 +64,22 @@ catkin_make
 roslaunch rotors_gazebo bebop_racetrack1.launch
 ```
 <p align="center">
-  <img src="images/racetrack1.jpg">
+  <img height= "350" src="images/racetrack1.jpg">
 </p>
 
 ```bash
 roslaunch rotors_gazebo bebop_racetrack2.launch
 ```
 <p align="center">
-  <img src="images/racetrack2.jpg">
+  <img height= "350" src="images/racetrack2.jpg">
 </p>
 
 ```bash
 roslaunch rotors_gazebo bebop_racetrack3.launch
 ```
-<br align="center">
-  <img height= "400" src="images/racetrack3.jpg">
-<br>
+<p align="center">
+  <img height= "350" src="images/racetrack3.jpg">
+</p>
 
 ## DeepPilot
 
