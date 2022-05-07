@@ -105,7 +105,7 @@ class DeepPilot:
 		rospy.wait_for_service("/gazebo/get_model_state")
 		
 		self.model_state = GetModelStateRequest()
-		self.model_state.model_name = 'quadrotor'
+		self.model_state.model_name = 'bebop2'
 		
 		print('===============  READY ================================')
 		print('===============  READY ================================')
