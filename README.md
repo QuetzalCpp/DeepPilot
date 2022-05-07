@@ -84,6 +84,7 @@ python train_deeppilot.py
 cd /bebop_ws/src/DeepPilot/DeepPilot_network
 python evaluation_mosaic-6img.py
 ```
+***Note: DeepPilot models were trained with another package to simulate the ardrone, so it is recommended to adjust the flight commands predicted by DeepPilot for this new platform (bebop2), as it has a higher speed than when flying in the tum_simulator platform.***
 
 ### Start keyboard
 
