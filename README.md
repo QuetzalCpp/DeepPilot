@@ -40,6 +40,21 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 
 # Installation
 
+## DeepPilot
+
+```bash
+git clone -b Noetic https://github.com/QuetzalCpp/DeepPilot.git
+cd DeepPilot
+bash setup.sh 
+```
+
+### DeepPilot Models pretrained 
+https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
+
+
+### Datasets to train DeepPilot
+https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
+
 ## Rotors Simulator
 
 ```bash
@@ -57,8 +72,6 @@ cd ..
 catkin_make
 ```
 ### Start the simulator mode
-
-
 
 ```bash
 roslaunch rotors_gazebo bebop_racetrack1.launch
@@ -80,20 +93,6 @@ roslaunch rotors_gazebo bebop_racetrack3.launch
 <p align="center">
   <img height= "350" src="images/racetrack3.jpg" alt="accessibility text">
 </p>
-
-## DeepPilot
-
-```bash
-cd DeepPilot
-bash setup.sh 
-```
-
-### DeepPilot Models pretrained 
-https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
-
-
-### Datasets to train DeepPilot
-https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
