@@ -8,5 +8,9 @@ rm -r adr_worlds
 cp -r ./keyboard ~/bebop_ws/src/
 rm -r keyboard
 
+sudo add-apt-repository ppa:rock-core/qt4
+sudo apt update
+sudo apt install qt4-default
+
 sudo apt install python3-pip
 pip install -r requirements.txt
