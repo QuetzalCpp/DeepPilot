@@ -1,14 +1,3 @@
-## Recommended system
-- Ubuntu 20.04
-- ROS Noetic + Gazebo 9
-- Python 3
-- Cuda 11.6
-- Cudnn 8.3.2
-- Tensorflow 2.08
-- Keras 2.08
-- rotors_simulator ported to noetic (https://github.com/simonernst/iROS_drone)
-
-
 # DeepPilot: A CNN for Autonomous Drone Racing
 
 Autonomous Drone Racing (ADR) was first proposed in IROS 2016. It called for the development of an autonomous drone capable of beating a human in a drone race. After almost five years, several teams have proposed different solutions with a common pipeline: gate detection; drone localization; and stable flight control. Recently, Deep Learning (DL) has been used for gate detection and localization of the drone regarding the gate. However, recent competitions such as the Game of Drones, held at NeurIPS 2019, called for solutions where DL played a more significant role. Motivated by the latter, in this work, we propose a CNN approach called DeepPilot that takes camera images as input and predicts flight commands as output. These flight commands represent: the angular position of the drone’s body frame in the roll and pitch angles, thus producing translation motion in those angles; rotational speed in the yaw angle; and vertical speed referred as altitude h. Values for these 4 flight commands, predicted by DeepPilot, are passed to the drone’s inner controller, thus enabling the drone to navigate autonomously through the gates in the racetrack. For this, we assume that the next gate becomes visible immediately after the current gate has been crossed. We present evaluations in simulated racetrack environments where DeepPilot is run several times successfully to prove repeatability. In average, DeepPilot runs at 25 frames per second (fps). We also present a thorough evaluation of what we called a temporal approach, which consists of creating a mosaic image, with consecutive camera frames, that is passed as input to the DeepPilot. We argue that this helps to learn the drone’s motion trend regarding the gate, thus acting as a local memory that leverages the prediction of the flight commands. Our results indicate that this purely DL-based artificial pilot is feasible to be used for the ADR challenge.
@@ -36,6 +25,16 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq2.jpg?sqp=COjn1fkF&rs=AOn4CLAn53ux1V39jaAOEYNxewph9vDDYA)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq3.jpg?sqp=COjn1fkF&rs=AOn4CLAT5O0iM-yuXqo-VJ0grnLhrh56EQ)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
+## Recommended system
+- Ubuntu 20.04
+- ROS Noetic + Gazebo 9
+- Python 3
+- Cuda 11.6
+- Cudnn 8.3.2
+- Tensorflow 2.08
+- Keras 2.08
+- rotors_simulator ported to noetic (https://github.com/simonernst/iROS_drone)
+
 # Installation
 
 ## Rotors Simulator
@@ -54,7 +53,7 @@ git clone https://github.com/ros-drivers/joystick_drivers
 cd ..
 catkin_make
 ```
-## Start the simulator mode
+### Start the simulator mode
 
 ```bash
 roslaunch rotors_gazebo bebop_racetrack1.launch
@@ -68,10 +67,12 @@ roslaunch rotors_gazebo bebop_racetrack3.launch
 cd DeepPilot
 bash setup.sh 
 ```
-## Datasets to train DeepPilot
+
+### DeepPilot Models pretrained 
 https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
 
-## DeepPilot Models pretrained 
+
+### Datasets to train DeepPilot
 https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
 
 ## Reference
