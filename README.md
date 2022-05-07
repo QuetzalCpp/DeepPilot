@@ -30,7 +30,7 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 
 ## Recommended system
 - Ubuntu 20.04
-- ROS Noetic + Gazebo 9
+- ROS Noetic + Gazebo 11
 - Python 3
 - Cuda 11.6
 - Cudnn 8.3.2
