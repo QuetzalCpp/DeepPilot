@@ -40,10 +40,30 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 - Keras 2.2.4
 - Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
+## DeepPilot
+
+```bash
+git clone https://github.com/QuetzalCpp/DeepPilot.git
+cd DeepPilot
+```
+
 ### Additional Resources
-- [Releases](https://github.com/QuetzalCpp/DeepPilot/releases/tag/v2.0)
 - [DeepPilot Models pretrained](https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT)
 - [Datasets to train DeepPilot](https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT)
+
+### Train DeepPilot
+
+```bash
+cd /bebop_ws/src/DeepPilot/DeepPilot_network
+python train_deeppilot.py
+```
+
+### Start DeepPilot
+
+```bash
+cd /bebop_ws/src/DeepPilot/DeepPilot_network
+python evaluation_mosaic-6img.py
+```
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
