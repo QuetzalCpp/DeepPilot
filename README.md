@@ -36,10 +36,11 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq2.jpg?sqp=COjn1fkF&rs=AOn4CLAn53ux1V39jaAOEYNxewph9vDDYA)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq3.jpg?sqp=COjn1fkF&rs=AOn4CLAT5O0iM-yuXqo-VJ0grnLhrh56EQ)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
-# Instalation
+# Installation
 
 ## Rotors Simulator
 
+```bash
 mkdir -p bebop_ws/src && cd bebop_ws/src
 
 sudo apt install build-essential python3-rosdep python3-catkin-tools
@@ -52,19 +53,25 @@ git clone https://github.com/ros-drivers/joystick_drivers
 
 cd ..
 catkin_make
-
+```
 ## Start the simulator mode
 
+```bash
 roslaunch rotors_gazebo bebop_racetrack1.launch
 roslaunch rotors_gazebo bebop_racetrack2.launch
 roslaunch rotors_gazebo bebop_racetrack3.launch
+```
 
 ## DeepPilot
 
+```bash
 cd DeepPilot
 bash setup.sh 
-
+```
 ## Datasets to train DeepPilot
+https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
+
+## DeepPilot Models pretrained 
 https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
 
 ## Reference
