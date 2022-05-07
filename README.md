@@ -1,12 +1,6 @@
-## Recommended system
-- Ubuntu 16.04
-- ROS kinetic Kame
-- Python 2.7.15
-- Cuda 9.0
-- Cudnn 7.3.0
-- Tensorflow 1.12.0
-- Keras 2.2.4
-- Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
+## Available for the following versions
+- [Ubuntu 16.04 ](https://github.com/QuetzalCpp/DeepPilot)
+- [Ubuntu 20.04](https://github.com/QuetzalCpp/DeepPilot/tree/Noetic)
 
 
 # DeepPilot: A CNN for Autonomous Drone Racing
@@ -35,6 +29,16 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq2.jpg?sqp=COjn1fkF&rs=AOn4CLAn53ux1V39jaAOEYNxewph9vDDYA)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq3.jpg?sqp=COjn1fkF&rs=AOn4CLAT5O0iM-yuXqo-VJ0grnLhrh56EQ)](https://www.youtube.com/watch?v=YD5oqe8DelE)
+
+## Recommended system
+- Ubuntu 16.04
+- ROS kinetic Kame
+- Python 2.7.15
+- Cuda 9.0
+- Cudnn 7.3.0
+- Tensorflow 1.12.0
+- Keras 2.2.4
+- Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
 
 ## Datasets to train DeepPilot
 https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
