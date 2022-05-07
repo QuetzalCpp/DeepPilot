@@ -26,14 +26,40 @@ A video of this approach can be watched at: https://youtu.be/Qo48pRCxM40.
 [![Watch the video](https://i9.ytimg.com/vi/Qo48pRCxM40/mq3.jpg?sqp=COjn1fkF&rs=AOn4CLAT5O0iM-yuXqo-VJ0grnLhrh56EQ)](https://www.youtube.com/watch?v=YD5oqe8DelE)
 
 ## Recommended system
-- Ubuntu 16.04
-- ROS kinetic Kame
-- Python 2.7.15
-- Cuda 9.0
-- Cudnn 7.3.0
-- Tensorflow 1.12.0
-- Keras 2.2.4
-- Tum_simulator ported to Kinetic (https://github.com/angelsantamaria/tum_simulator.git)
+- Ubuntu 20.04
+- ROS Noetic + Gazebo 9
+- Python 3
+- Cuda 11.6
+- Cudnn 8.3.2
+- Tensorflow 2.08
+- Keras 2.08
+- rotors_simulator ported to noetic (https://github.com/simonernst/iROS_drone)
+
+## Rotors Simulator
+
+mkdir -p bebop_ws/src && cd bebop_ws/src
+
+sudo apt install build-essential python3-rosdep python3-catkin-tools
+sudo apt install libusb-dev python3-osrf-pycommon libspnav-dev libbluetooth-dev libcwiid-dev libgoogle-glog-dev
+sudo apt install ros-noetic-mavros ros-noetic-octomap-ros 
+
+git clone https://github.com/ethz-asl/mav_comm
+git clone -b noetic https://github.com/simonernst/iROS_drone
+git clone https://github.com/ros-drivers/joystick_drivers
+
+cd ..
+catkin_make
+
+## Start the simulator mode
+
+roslaunch rotors_gazebo bebop_racetrack1.launch
+roslaunch rotors_gazebo bebop_racetrack2.launch
+roslaunch rotors_gazebo bebop_racetrack3.launch
+
+## DeepPilot
+
+cd DeepPilot
+bash setup.sh 
 
 ## Datasets to train DeepPilot
 https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT
