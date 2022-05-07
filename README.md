@@ -55,12 +55,15 @@ catkin_make
 ```
 ### Start the simulator mode
 
+<p align="center">
+  <img src="images/racetrack1.jpg" width="350" title="Racetrack 1">
+  <img src="images/racetrack2.jpg" width="350" title="Racetrack 2">
+  <img src="images/racetrack3.jpg" width="350" title="Racetrack 3">
+</p>
+
 ```bash
 roslaunch rotors_gazebo bebop_racetrack1.launch
 ```
-<p align="center">
-  <img src="images/racetrack1.jpg">
-</p>
 
 ```bash
 roslaunch rotors_gazebo bebop_racetrack2.launch
